@@ -1,0 +1,219 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center{
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 0 2%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+header{
+   background-color: #ebe1e2;
+   padding: 15px 0;
+   border-bottom: 2px solid #58a0ae;
+}
+.menu-mobile{
+   display: none;
+}
+#menuItems{
+   position: absolute;
+   left: 0;
+   top: 60px;
+   width: 100%;
+   text-align: center;
+   background-color: #ebe1e2;
+   border-bottom:2px solid #58a0ae;
+   display: none;
+}
+#menuItems.show{
+   display: block;
+}
+
+#menuItems a{
+   display: block;
+   text-decoration: none;
+   color: #58a0ae;
+
+}
+
+.logo {color:  #e69093;}
+.logo h2{
+   font-size: 22px;
+   font-weight: 400;
+}
+
+.menu{
+   width: 70%;
+   text-align:right;
+}
+.menu a{
+   color: #5da0b0 ;
+   font-size: 14px;
+   text-decoration: none;
+   margin-right: 30px;
+   transition: 0.4s;
+}
+.menu a:hover{
+   color: #30535e;
+}
+.menu .btn-menu{
+   background-color: #e98e93;
+   display: inline-block;
+   padding: 8px 16px;
+   border-radius: 8px;
+   color: #ebe1e2;
+   
+}
+.menu .btn-menu:hover{
+   background-color: #58a0ae;
+   color: #ebe1e2;
+}
+
+/*
+sectcion Main
+*/
+ section.main{
+   background-image: url(https://wallpaperaccess.com/full/6740834.png);
+   padding: 70px 0;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .main_cta{
+   width: 100%;
+   text-align: center;
+   margin: 60px 0;
+ }
+ .main_cta h2{
+   color: #e69093;
+   font-size: 40px;
+ }
+ .main_cta p{
+   color: gray;
+   font-size: 19px;
+   margin: 10px 0;
+ }
+.main_cta button {
+   background-color: #e98e93;
+   display: inline-block;
+   padding: 8px 30px;
+   border-radius: 8px;
+   border: 0;
+   font-size: 16px;
+   cursor: pointer;
+}
+.main_cta button a{
+   color: #ebe1e2;
+   text-decoration: none;
+}
+
+.diferenciais{
+   display: flex;
+   flex-wrap: wrap;
+}
+.diferencial-single{
+   background-color: #5d9fb09c;
+   width: 23%;
+   margin-right: 2%;
+   padding: 50px 20px;
+   border-radius: 10px;
+}
+.diferencial-single h2{
+   color: #30535e;
+   margin: 10px 0;
+   font-size: 18px;
+   text-shadow: 2px 2px 4px white;
+}
+.diferencial-single p {
+   color: white;
+   text-shadow: 2px 2px 4px #000000;
+   font-size: 14px;
+   line-height: 24px;
+}
+
+
+section.sobre{
+   padding: 50px 0;
+   background-color: #e0cacc;
+}
+
+.chamada-sobre{
+   width: 100%;
+   text-align: center;
+
+}
+.chamada-sobre h2{
+   color: #58a0ae;
+   text-transform: uppercase;
+}
+.chamada-sobre p{
+   font-size: 14px;
+   color: gray;
+   margin: 10px 0;
+
+
+}
+
+.conteudo-sobre{ 
+   display: flex;
+   flex-wrap: wrap;
+}
+.conteudo-sobre p{
+   margin-right:2%;
+   width: 48%;
+}
+.conteudo-sobre i a{
+   text-decoration: none;
+   display: inline-block;
+   width: 100%;
+   margin-top: 10px;
+   color: #30535e;
+}
+
+section.conquistas{
+   background-color:  #ebe1e2;
+   padding: 20px 0;
+}
+.conquista-single{
+   width: 22%;
+   margin-right: 3%;
+   text-align: center;
+   color: #c66d72;
+}
+.conquista-single h2{
+   font-size: 30px;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+   .diferencial-single{
+      width:100%;
+      margin-bottom: 20px;
+   }
+   .conteudo-sobre p{width: 100%; margin: 20px 20px;}
+   .menu{
+      display: none;
+   }
+   .logo{
+      width:60%;
+   }
+   .menu-mobile{
+      width: 40%;
+      text-align: right;
+      display: block;
+   }
+   .menu-mobile i{
+      cursor: pointer;
+      font-size: 30px;
+      color: #58a0ae;
+   }
+}

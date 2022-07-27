@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ProjetoComercialOne</title>
+      <link href="style.css" rel="stylesheet"/>
+
+   </head>
+   <body>
+
+
+      <header>
+         <div class="center">
+            <div class="logo">
+               <h2>Projeto Comercial One</h2>
+            </div><!--logo-->
+            <div class="menu">
+               <a href="#">Home</a>
+               <a href="#">Sobre </a>
+               <a href="#">Contato</a>
+               <a href="#" class="btn-menu">
+                  Get started
+               </a>
+            </div><!--menu-->
+            <div class="menu-mobile" >
+               <i class="fa-solid fa-ellipsis" onclick="mostrar()"></i>
+               <div id="menuItems">
+                  <a href="#">Home</a>
+                  <a href="#">Sobre </a>
+                  <a href="#">Contato</a>
+               </div>
+            </div>
+         </div><!--center-->
+      </header>
+
+
+
+      <section class="main">
+         <div class="center">
+            <div class="main_cta">
+               <h2>Site Comercial One</h2>
+               <p>Primeiro Site Comercial</p>
+                  <button><a href="#">Get Started</a></button>
+            </div><!--main_cta-->
+
+            <div class="diferenciais">
+               <div class="diferencial-single">
+                  <h2><i class="fa-solid fa-code"></i> Pensador </h2>
+                  <p>Para conhecermos os amigos é necessário passar pelo sucesso e pela desgraça. No sucesso, verificamos a quantidade e, na desgraça, a qualidade.</p>
+               </div><!--diferencial-single-->
+               <div class="diferencial-single">
+                  <h2><i class="fa-solid fa-code"></i> Pensador</h2>
+                  <p>Para conhecermos os amigos é necessário passar pelo sucesso e pela desgraça. No sucesso, verificamos a quantidade e, na desgraça, a qualidade.</p>
+               </div><!--diferencial-single-->
+               <div class="diferencial-single">
+                  <h2><i class="fa-solid fa-code"></i> Pensador</h2>
+                  <p>Para conhecermos os amigos é necessário passar pelo sucesso e pela desgraça. No sucesso, verificamos a quantidade e, na desgraça, a qualidade.</p>
+               </div><!--diferencial-single-->
+               <div class="diferencial-single">
+                  <h2><i class="fa-solid fa-code"></i> Pensador</h2>
+                  <p>Para conhecermos os amigos é necessário passar pelo sucesso e pela desgraça. No sucesso, verificamos a quantidade e, na desgraça, a qualidade.</p>
+               </div><!--diferencial-single-->
+            </div><!--diferenciais-->
+
+         </div><!--center-->
+      </section><!--main-->
+
+
+      <section class="sobre">
+         <div class="center">
+            <div class="chamada-sobre">
+               <h2>Sobre o One</h2>
+               <p> Primeiro site feito </p>
+            </div><!--chamada-sobre-->
+            <div class="conteudo-sobre">
+               <p>Site utilizado para aprender a usar o HTML, CSS e JavaScript. Não está do mesmo jeito que foi feito na live tentei alterar algumas coisas para conseguir aprender mais sobre outras coisas. Baseado na live do danki code:
+               <br>
+               <i><a href="https://youtu.be/TdpmCHcM-S4" target="_blank"><i class="fa-solid fa-angle-right"></i> Link da aula 1</a></i>
+               <i><a href="https://youtu.be/AA6h4Og2dao" target="_blank"><i class="fa-solid fa-angle-right"></i> Link da aula 2</a></i>
+               </p>
+               <p>Site utilizado para aprender a usar o HTML, CSS e JavaScript. Não está do mesmo jeito que foi feito na live tentei alterar algumas coisas para conseguir aprender mais sobre outras coisas</p>
+            </div><!--conteudo-sobre-->
+         </div><!--center-->
+      </section><!--sobre-->
+
+      <section class="conquistas">
+         <div class="center">
+            <div class="conquista-single">   
+               <h2>50</h2>
+               <p>visitantes</p>
+            </div><!--conquista-single-->
+            <div class="conquista-single">   
+               <h2>50</h2>
+               <p>visitantes</p>
+            </div><!--conquista-single-->
+            <div class="conquista-single">   
+               <h2>50</h2>
+               <p>visitantes</p>
+            </div><!--conquista-single-->
+            <div class="conquista-single">   
+               <h2>50</h2>
+               <p>visitantes</p>
+            </div><!--conquista-single-->
+         </div><!--center-->
+      </section><!--conquistas-->
+
+
+
+      <script src="https://kit.fontawesome.com/5aed75b52b.js" crossorigin="anonymous"></script>
+      <script>
+         let  menuItems = document.querySelector('#menuItems')
+            function mostrar(){
+               if(menuItems.classList != 'show'){
+               menuItems.classList.add ('show')
+               } else{
+                  menuItems.classList.remove ('show')
+               }
+            }
+      </script>
+
+   </body>
+</html>
