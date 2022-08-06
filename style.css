@@ -29,12 +29,18 @@ header{
    text-align: center;
    background-color: #ebe1e2;
    border-bottom:2px solid #58a0ae;
-   display: none;
+   display: block;
+   opacity: 0;
+   transition: 0.3s;
 }
 #menuItems.show{
-   display: block;
-}
 
+   opacity: 1;
+}
+#menuItems.hide{
+
+   opacity: 0;
+}
 #menuItems a{
    display: block;
    text-decoration: none;
@@ -157,8 +163,6 @@ section.sobre{
    font-size: 14px;
    color: gray;
    margin: 10px 0;
-
-
 }
 
 .conteudo-sobre{ 
@@ -178,7 +182,7 @@ section.sobre{
 }
 
 section.conquistas{
-   background-color:  #ebe1e2;
+   background-color: #ebe1e2 ;
    padding: 20px 0;
 }
 .conquista-single{
@@ -190,6 +194,53 @@ section.conquistas{
 .conquista-single h2{
    font-size: 30px;
 }
+.conquista-single img{
+   max-width: 100%;
+}
+.conquista-single img{
+   filter: grayscale(100%);
+   transform: scale(1,0.8);
+   transition: 1s;
+}
+.conquista-single img:hover{
+   filter: grayscale(0);
+   transform: scale(1,1);
+}
+
+
+/*section sobre imagem*/
+section.sobre-estrela{
+   padding: 40px 0;
+   background-color: #e0cacc;
+}
+
+.sobre-estrela-img{
+   width: 50%;
+   border-radius: 10px;
+}
+.sobre-estrela-img img{max-width: 100%;}
+.sobre-estrela-content{
+   width: 50%;
+   padding: 0 50px;
+
+   margin-top: 5px;
+}
+.sobre-estrela-content h2{
+   color: #58a0ae;
+   margin-bottom: 20px;
+}
+.sobre-estrela-content p{
+   color: white;
+   text-shadow: 2px 2px 4px #000000;
+   font-size: 14px;
+   line-height: 24px;
+   margin-bottom: 14px;
+   background-color: #5d9fb09c;
+   border-radius: 5px;
+   padding: 2px;
+}
+
+
 
 
 
@@ -216,4 +267,7 @@ section.conquistas{
       font-size: 30px;
       color: #58a0ae;
    }
+   .sobre-estrela-img {width: 100%;}
+   .sobre-estrela-content{width: 100%;}
+
 }

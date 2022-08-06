@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>ProjetoComercialOne</title>
+      <title>ProjetoOne</title>
       <link href="style.css" rel="stylesheet"/>
 
    </head>
@@ -13,7 +13,7 @@
       <header>
          <div class="center">
             <div class="logo">
-               <h2>Projeto Comercial One</h2>
+               <h2>Projeto  One</h2>
             </div><!--logo-->
             <div class="menu">
                <a href="#">Home</a>
@@ -39,7 +39,7 @@
       <section class="main">
          <div class="center">
             <div class="main_cta">
-               <h2>Site Comercial One</h2>
+               <h2>Site One Responsivo</h2>
                <p>Primeiro Site Comercial</p>
                   <button><a href="#">Get Started</a></button>
             </div><!--main_cta-->
@@ -106,15 +106,51 @@
       </section><!--conquistas-->
 
 
+      <section class="sobre-estrela">
+         <div class="center">
+            <img class="sobre-estrela-img" src="./img/james-webb.png">
+            <div class="sobre-estrela-content">
+               <h2>Foto do telescópio James Webb</h2>
+               <p>
+                  Para marcar o avanço na astronomia no meu primeiro site! Essas são fotos tiradas pelo telescópio james webb.
+               </p>
+               <p>
+                   O Webb se dedica a observar o Universo em luz infravermelha, enquanto o Hubble continuará a estudá-lo principalmente em ondas ultravioleta e ópticas, embora tenha alguma capacidade de infravermelho".
+               </p>
+            </div>
+         </div><!--center-->
+      </section><!--sobre-estrela-->
 
+      <section class="conquistas">
+         <div class="center">
+            <div class="conquista-single" style="width:16%; margin-right:9%;">   
+               <img src="./img/galaxia-2 (2).jpg">   
+            </div><!--conquista-single-->
+            <div class="conquista-single" style="width:16%; margin-right:9%;">   
+               <img src="./img/galaxia (2).jpg">
+            </div><!--conquista-single-->
+            <div class="conquista-single" style="width:16%; margin-right:9%;">   
+               <img src="./img/nebulosa (2).jpg">
+            </div><!--conquista-single-->
+            <div class="conquista-single" style="width:16%; margin-right:9%;">   
+               <img src="./img/nova (2).jpg">
+            </div><!--conquista-single-->
+         </div><!--center-->
+      </section><!--conquistas-->
+
+
+
+      
       <script src="https://kit.fontawesome.com/5aed75b52b.js" crossorigin="anonymous"></script>
       <script>
          let  menuItems = document.querySelector('#menuItems')
             function mostrar(){
                if(menuItems.classList != 'show'){
-               menuItems.classList.add ('show')
+                  menuItems.classList.remove('hide')
+                  menuItems.classList.add ('show')
                } else{
-                  menuItems.classList.remove ('show')
+                  menuItems.classList.remove('show')
+                  menuItems.classList.add('hide')
                }
             }
       </script>
