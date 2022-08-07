@@ -114,6 +114,11 @@ sectcion Main
    border: 0;
    font-size: 16px;
    cursor: pointer;
+   transition: 1s;
+}
+.main_cta button:hover{
+   background-color: #58a0ae;
+   color: #ebe1e2;
 }
 .main_cta button a{
    color: #ebe1e2;
@@ -324,4 +329,5 @@ section.depoimentos .depoimentos-chamada{
    }
    .sobre-estrela-img {width: 100%;}
    .sobre-estrela-content{width: 100%;}
+
 }
