@@ -196,17 +196,14 @@ section.conquistas{
 }
 .conquista-single img{
    max-width: 100%;
-}
-.conquista-single img{
    filter: grayscale(100%);
    transform: scale(1,1);
    transition: 1s;
-   border-radius: 10px;
+   border-radius: 50px;
 }
 .conquista-single img:hover{
    filter: grayscale(0);
    transform: scale(1.1,1.1);
-   border-radius: 10px;
 }
 
 
@@ -327,5 +324,4 @@ section.depoimentos .depoimentos-chamada{
    }
    .sobre-estrela-img {width: 100%;}
    .sobre-estrela-content{width: 100%;}
-
 }
