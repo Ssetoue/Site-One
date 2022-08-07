@@ -201,10 +201,12 @@ section.conquistas{
    filter: grayscale(100%);
    transform: scale(1,1);
    transition: 1s;
+   border-radius: 10px;
 }
 .conquista-single img:hover{
    filter: grayscale(0);
    transform: scale(1.1,1.1);
+   border-radius: 10px;
 }
 
 
